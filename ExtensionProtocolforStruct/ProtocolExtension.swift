@@ -9,10 +9,10 @@
 import Foundation
 import submodule
 
-protocol testProtocol {
-    var foo:String{
-        get
-    }
+protocol TestProtocol {
+
+    var foo: String { get }
+
 }
 
-extension testStruct:testProtocol{}
+extension TestStruct : TestProtocol { }

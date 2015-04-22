@@ -465,6 +465,7 @@
 				6B3ED8F51AE6BF5100FA0560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B3ED8F61AE6BF5100FA0560 /* Build configuration list for PBXNativeTarget "ExtensionProtocolforStructTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +474,7 @@
 				6B3ED8F81AE6BF5100FA0560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

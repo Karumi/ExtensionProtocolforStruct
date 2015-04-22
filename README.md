@@ -7,3 +7,36 @@ Undefined symbols for architecture x86_64:
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 ```
+
+The setup is:
+
+1 - Declare a public struct in a framework
+
+```
+
+public struct TestStruct {
+    public let foo: String = ""
+}
+
+```
+
+- Declare a protocol that matches the property names of the struct in your project
+
+```
+protocol TestProtocol {
+    
+    var foo: String { get }
+    
+}
+```
+
+- Declare an extension for the struct that implements the protocol
+
+```
+extension TestStruct : TestProtocol { }
+```
+
+Expected: The code compiles and runs
+
+Actual: The linking breaks with the error described at the beginning.
+

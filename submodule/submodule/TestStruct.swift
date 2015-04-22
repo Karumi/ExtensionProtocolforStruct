@@ -8,6 +8,15 @@
 
 import Foundation
 
-public struct testStruct {
-    public let foo:String = ""
+public struct TestStruct {
+
+    public let foo: String = ""
+
 }
+
+// If you declare the struct as a class, the linking works
+//public class TestStruct {
+//
+//    public let foo: String = ""
+//
+//}
