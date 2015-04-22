@@ -40,3 +40,4 @@ Expected: The code compiles and runs
 
 Actual: The linking breaks with the error described at the beginning.
 
+Note: If we use a class instead of a struct, the code works as expected
